@@ -21,7 +21,7 @@
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-/* Efeito laranja para todos os botões */
+
 .btn:hover {
   --btn-bg-color: linear-gradient(
     90deg,

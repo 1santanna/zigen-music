@@ -3,7 +3,7 @@
   margin-block-start: var(--py-xl);
 }
 
-/* Desktop: logo à esquerda e links à direita */
+
 .site-footer .conteiner {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -49,7 +49,7 @@
   color: var(--text-color-primary);
 }
 
-/* Redes à esquerda e copyright à direita */
+
 .footer-bottom {
   grid-column: 1 / -1;
   display: flex;
@@ -90,7 +90,7 @@
   transform: translateY(-2px);
 }
 
-/* Celular */
+
 @media (width < 768px) {
   .site-footer .conteiner {
     grid-template-columns: 1fr;
