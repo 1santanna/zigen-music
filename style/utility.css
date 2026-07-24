@@ -1,3 +1,7 @@
+.center {
+    text-align: center;
+}
+
 .py-base {
     padding-block: var(--py-base);
 }
@@ -17,10 +21,8 @@
 
 
 .conteiner {
-    max-width: 375px;
-    width: min(var (--max-width), 100% - var(--px-lg) * 2);
+    width: min(100% - var(--px-lg) * 2, var(--max-width, 375px));
     margin-inline: auto;
-    border: 1px solid red;
 }
 
 .desktop-only {
@@ -32,9 +34,25 @@
     gap: 1rem;
 }
 
+.even-columns > * {
+    min-width: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+}
+
 @media(width >= 1280px) {
     .conteiner {
-        max-width: 1440px;
+        --max-width: 1440px;
     }
 
     .desktop-only {

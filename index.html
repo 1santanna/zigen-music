@@ -1,27 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zigen-page</title>
+    <title>Zingen - Quem canta seus males espanta</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/index.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-        <header>
+
+   
+    <header class="site-header">
+        <div class="conteiner flex">
+            <a href="#" class="logo">Zingen</a>
+
+            <nav class="main-nav desktop-only">
+                <ul class="flex gap-1" role="list">
+                    <li><a href="#conheca-o-app">Conheça o app</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#planos">Planos e preços</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btn btn-sm">Baixar agora</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
             <div class="conteiner">
-                <h1>
-              
-                </h1>
+                <svg class="hero-wave" viewBox="0 0 389 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <defs>
+                        <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="var(--brand-color-secondary)"/>
+                            <stop offset="100%" stop-color="var(--brand-color-primary)"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="0.0" y="27.0" width="4" height="6.0" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="7.0" y="24.8" width="4" height="10.4" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="14.0" y="21.4" width="4" height="17.3" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="21.0" y="20.8" width="4" height="18.5" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="28.0" y="18.0" width="4" height="24.0" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="35.0" y="16.8" width="4" height="26.4" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="42.0" y="17.1" width="4" height="25.7" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="49.0" y="11.4" width="4" height="37.1" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="56.0" y="10.6" width="4" height="38.7" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="63.0" y="5.9" width="4" height="48.1" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="70.0" y="9.8" width="4" height="40.4" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="77.0" y="9.6" width="4" height="40.9" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="84.0" y="9.6" width="4" height="40.9" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="91.0" y="5.4" width="4" height="49.3" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="98.0" y="12.8" width="4" height="34.5" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="105.0" y="11.7" width="4" height="36.6" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="112.0" y="3.9" width="4" height="52.2" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="119.0" y="0.6" width="4" height="58.9" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="126.0" y="4.4" width="4" height="51.1" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="133.0" y="6.4" width="4" height="47.3" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="140.0" y="3.8" width="4" height="52.5" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="147.0" y="13.6" width="4" height="32.9" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="154.0" y="5.0" width="4" height="50.0" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="161.0" y="11.0" width="4" height="38.0" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="168.0" y="9.0" width="4" height="42.0" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="175.0" y="9.3" width="4" height="41.4" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="182.0" y="7.3" width="4" height="45.4" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="189.0" y="1.9" width="4" height="56.1" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="196.0" y="12.1" width="4" height="35.7" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="203.0" y="7.9" width="4" height="44.2" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="210.0" y="7.3" width="4" height="45.4" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="217.0" y="10.1" width="4" height="39.8" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="224.0" y="4.8" width="4" height="50.5" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="231.0" y="9.9" width="4" height="40.3" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="238.0" y="9.9" width="4" height="40.2" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="245.0" y="8.4" width="4" height="43.3" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="252.0" y="6.9" width="4" height="46.2" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="259.0" y="9.6" width="4" height="40.9" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="266.0" y="10.8" width="4" height="38.5" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="273.0" y="7.9" width="4" height="44.3" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="280.0" y="5.8" width="4" height="48.5" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="287.0" y="7.4" width="4" height="45.3" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="294.0" y="2.1" width="4" height="55.7" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="301.0" y="3.1" width="4" height="53.7" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="308.0" y="11.4" width="4" height="37.1" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="315.0" y="8.0" width="4" height="44.0" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="322.0" y="8.5" width="4" height="43.0" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="329.0" y="5.5" width="4" height="49.0" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="336.0" y="6.5" width="4" height="47.0" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="343.0" y="12.8" width="4" height="34.4" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="350.0" y="10.8" width="4" height="38.5" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="357.0" y="18.4" width="4" height="23.2" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="364.0" y="20.7" width="4" height="18.6" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="371.0" y="21.9" width="4" height="16.1" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="378.0" y="25.2" width="4" height="9.5" rx="1.5" fill="url(#waveGradient)"/>
+                    <rect x="385.0" y="27.0" width="4" height="6.0" rx="1.5" fill="url(#waveGradient)"/>
+                </svg>
+
+                <h1>Quem canta seus males espanta</h1>
+                <p class="hero-subtitle">Cantar nunca foi tão fácil</p>
+
+                <div class="hero-buttons flex gap-1">
+                    <a href="#planos" class="btn btn-md btn-outline">Ver planos</a>
+                    <a href="#" class="btn btn-md">Baixar agora</a>
+                </div>
             </div>
-            
-            
-        </header>
-    </div>
+        </section>
+
+       
+        <section id="conheca-o-app" class="about-app">
+            <div class="conteiner even-columns">
+                <div class="about-app-text">
+                    <p class="eyebrow">Conheça o app</p>
+                    <h2>O aplicativo perfeito para aprender a cantar</h2>
+                    <p>Nosso algoritmo de Inteligência Artificial permite remover a voz original e manter as melodias das músicas. Dessa forma, temos o maior repertório musical para Karaokê! Além disso, ao cantar, sua voz e afinação é comparada pelo algoritmo permitindo uma avaliação precisa da sua performance te ajudando a melhorar seu canto.</p>
+                </div>
+
+                <div class="about-app-image">
+                    <img src="assets/App_mockups.png" alt="Duas telas do aplicativo Zingen: uma exibindo a letra da música e a pontuação, outra exibindo a busca por músicas" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="funcionalidades" class="features">
+            <div class="conteiner">
+
+                <div class="features-grid">
+
+                    <article class="feature-card feature-card--sm">
+                        <img class="feature-icon" src="assets/MagicWand.png" alt="" loading="lazy">
+                        <h3>A maior biblioteca de músicas de Karaokê!</h3>
+                        <p>Nossa IA remove a voz de qualquer música e a deixa pronta pra cantar, num passe de mágica!</p>
+                    </article>
+
+                    <article class="feature-card feature-card--tall">
+                        <img class="feature-icon" src="assets/Vector.png" alt="" loading="lazy">
+                        <h3>Experiência gamificada</h3>
+                        <p>Sua performance é pontuada de acordo com nosso algoritmo ultra preciso. Desafie-se, ganhe reconhecimento e comemore sua evolução!</p>
+                        <div class="feature-image">
+                            <img src="assets/Mockup.png" alt="Tela do aplicativo mostrando a letra de 'Can You Feel The Love Tonight' e a pontuação da performance" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="feature-card feature-card--sm">
+                        <img class="feature-icon" src="assets/Vector__1_.png" alt="" loading="lazy">
+                        <h3>Grave suas performances</h3>
+                        <p>Seja para compartilhar com os amigos ou para acompanhar sua evolução, nosso recurso de gravação de áudio e vídeo permite que você aproveite a experiência ao máximo.</p>
+                    </article>
+
+                    <article class="feature-card feature-card--wide feature-card--media-start">
+                        <div class="feature-media">
+                            <img src="assets/Tela_1.png" alt="Feed do aplicativo mostrando a gravação de Maria Luiza Fernandes cantando 'Rolling in the Deep'" loading="lazy">
+                        </div>
+                        <div class="feature-card-content">
+                            <img class="feature-icon" src="assets/UsersThree.png" alt="" loading="lazy">
+                            <h3>Compartilhe com a comunidade</h3>
+                            <p>Compartilhe suas gravações com a comunidade, interaja e explore a performance vocal de outras pessoas no seu feed!</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card feature-card--wide feature-card--media-end">
+                        <div class="feature-card-content">
+                            <img class="feature-icon" src="assets/MusicNotes.png" alt="" loading="lazy">
+                            <h3>Letras em tempo-real</h3>
+                            <p>Nunca perca o ritmo com as letras das músicas sincronizadas e exibidas em tempo real. Você também pode ativar a voz original da música para ajudar.</p>
+                        </div>
+                        <div class="feature-media">
+                            <img src="assets/Tela_3.png" alt="Tela do aplicativo mostrando a letra da música 'Hello' de Adele sincronizada em tempo real" loading="lazy">
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="planos" class="pricing">
+            <div class="conteiner">
+                <p class="eyebrow center">Planos e preços</p>
+                <h2 class="center">Assine e tenha acesso ilimitado a todas as funcionalidades</h2>
+
+                <div class="pricing-grid even-columns">
+
+                    <article class="pricing-card">
+                        <h3>Básico</h3>
+                        <p>Baixe o app e comece a cantar agora mesmo!</p>
+                        <p class="price">Grátis</p>
+                        <a href="#" class="btn btn-md btn-outline">Baixar agora</a>
+                        <ul role="list">
+                            <li>Com anúncios</li>
+                            <li>Até 5 músicas por dia</li>
+                            <li>Cante apenas as músicas disponíveis no plano gratuito</li>
+                        </ul>
+                    </article>
+
+                    <article class="pricing-card pricing-card--highlight">
+                        <p class="badge">1 mês grátis</p>
+                        <h3>Premium</h3>
+                        <p>Ideal para quem já cansou de passar vergonha no Karaokê</p>
+                        <p class="price">R$ 24,90<span>/mês</span></p>
+                        <a href="#" class="btn btn-md">Experimente de graça</a>
+                        <ul role="list">
+                            <li>Sem interrupção de anúncios</li>
+                            <li>Cante quantas músicas quiser</li>
+                            <li>Cante todas as músicas da biblioteca</li>
+                        </ul>
+                    </article>
+
+                    <article class="pricing-card">
+                        <h3>Família</h3>
+                        <p>Para aquelas famílias que adoram se reunir pra cantar</p>
+                        <p class="price">R$ 21,90<span>/mês por pessoa</span></p>
+                        <a href="#" class="btn btn-md btn-outline">Assinar agora</a>
+                        <ul role="list">
+                            <li>Sem interrupção de anúncios</li>
+                            <li>Cante quantas músicas quiser</li>
+                            <li>Cante todas as músicas da biblioteca</li>
+                            <li>Mínimo de 4 pessoas no plano família</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-final">
+            <div class="conteiner even-columns">
+                <div class="cta-final-text">
+                    <p class="eyebrow">Download</p>
+                    <h2>Bora cantar?</h2>
+                    <p>Desperte seu potencial de estrela, liberte sua voz e faça parte da comunidade musical mais envolvente. Baixe o Zingen agora e transforme suas performances em experiências inesquecíveis!</p>
+
+                    <div class="store-buttons flex gap-1">
+                        <a href="#"><!-- TODO: ícone App Store --> App Store</a>
+                        <a href="#"><!-- TODO: ícone Google Play --> Google Play</a>
+                    </div>
+                </div>
+
+                <div class="cta-final-image">
+                    <img src="assets/rapaz-cantando.png" alt="Rapaz sorrindo e cantando animadamente enquanto ouve música no fone de ouvido" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+   
+    <footer class="site-footer">
+        <div class="conteiner">
+            <a href="#" class="logo">Zingen</a>
+
+            <div class="footer-columns even-columns">
+                <div class="footer-column">
+                    <h3>Produto</h3>
+                    <ul role="list">
+                        <li><a href="#funcionalidades">Funcionalidades</a></li>
+                        <li><a href="#planos">Planos e preços</a></li>
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Empresa</h3>
+                    <ul role="list">
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul role="list">
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom flex">
+                <p>&copy;2024 Zingen Technologies, Inc.</p>
+
+                <div class="social-links flex gap-1">
+                    <a href="#" aria-label="TikTok"><img src="assets/tiktok-logo.svg" alt="" loading="lazy"></a>
+                    <a href="#" aria-label="Instagram"><img src="assets/instagram-logo.svg" alt="" loading="lazy"></a>
+                    <a href="#" aria-label="X"><img src="assets/x-logo.svg" alt="" loading="lazy"></a>
+                    <a href="#" aria-label="Discord"><img src="assets/discord-logo.svg" alt="" loading="lazy"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

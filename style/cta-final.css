@@ -1,0 +1,52 @@
+.cta-final {
+    padding-block: var(--py-xl);
+}
+
+.cta-final .conteiner {
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 1.5rem;
+    padding: var(--py-lg) var(--px-lg);
+    align-items: center;
+}
+
+.cta-final-text p:not(.eyebrow) {
+    color: var(--text-color-secondary);
+    margin-block-start: 1rem;
+    margin-block-end: var(--py-lg);
+}
+
+.store-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--stroke-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    font-size: var(--fs-sm);
+}
+
+.cta-final-image {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-block-start: var(--py-lg);
+    align-self: end;
+}
+
+.cta-final-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (width >= 1280px) {
+    .cta-final .conteiner {
+        padding: var(--py-xl);
+    }
+
+    .cta-final-image {
+        margin-block-start: 0;
+        max-width: 20rem;
+        margin-inline-start: auto;
+    }
+}

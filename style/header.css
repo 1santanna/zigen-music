@@ -1,0 +1,23 @@
+.site-header .conteiner {
+    align-items: center;
+    justify-content: space-between;
+    padding-block: var(--py-base);
+}
+
+.logo {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+}
+
+.main-nav ul {
+    align-items: center;
+}
+
+.main-nav a {
+    color: var(--text-color-secondary);
+    font-size: var(--fs-sm);
+}
+
+.main-nav a:hover {
+    color: var(--text-color-primary);
+}

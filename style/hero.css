@@ -1,0 +1,107 @@
+.pricing {
+    padding-block: var(--py-xl);
+}
+
+.pricing h2 {
+    max-width: 24ch;
+    margin-inline: auto;
+    margin-block-end: var(--py-lg);
+}
+
+.pricing-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.pricing-card {
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 1rem;
+    padding: var(--py-lg) var(--px-lg);
+    position: relative;
+}
+
+.pricing-card h3 {
+    margin-block-end: 0.5rem;
+}
+
+.pricing-card > p {
+    color: var(--text-color-secondary);
+    font-size: var(--fs-sm);
+    margin-block-end: 1rem;
+}
+
+.pricing-card .price {
+    color: var(--text-color-primary);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    margin-block-end: 1rem;
+}
+
+.pricing-card .price span {
+    color: var(--text-color-secondary);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-base);
+}
+
+.pricing-card .btn {
+    width: 100%;
+    margin-block-end: var(--py-lg);
+}
+
+.pricing-card ul {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.pricing-card li {
+    list-style: none;
+    padding-inline-start: 1.5rem;
+    position: relative;
+    color: var(--text-color-secondary);
+    font-size: var(--fs-sm);
+}
+
+.pricing-card li::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0.2em;
+    width: 0.9em;
+    height: 0.9em;
+    background-image: url(../assets/Check.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pricing-card--highlight {
+    border-color: var(--brand-color-primary);
+}
+
+.pricing-card--highlight .badge {
+    position: absolute;
+    inset-block-start: -0.75rem;
+    inset-inline-start: var(--px-lg);
+    background: linear-gradient(
+        90deg,
+        var(--brand-color-secondary) 0%,
+        var(--brand-color-primary) 100%
+    );
+    color: var(--bg-color);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bold);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+}
+
+@media (width >= 1280px) {
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .pricing-card--highlight {
+        padding-block: calc(var(--py-lg) * 1.3);
+    }
+}
