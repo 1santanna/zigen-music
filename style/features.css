@@ -1,134 +1,164 @@
 .features {
-    padding-block: var(--py-xl);
+  padding-block: var(--py-xl);
 }
 
 .features-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    min-width: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  min-width: 0;
 }
 
 .feature-card {
-    background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
-    border-radius: 1rem;
-    padding: var(--py-lg) var(--px-lg);
-    min-width: 0;
+  min-width: 0;
+  padding: var(--py-lg) var(--px-lg);
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .feature-icon {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    margin-block-end: 1rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-block-end: 1rem;
 }
 
 .feature-card h3 {
-    margin-block-end: 0.5rem;
+  margin-block-end: 0.5rem;
 }
 
 .feature-card p {
-    color: var(--text-color-secondary);
-    font-size: var(--fs-sm);
+  color: var(--text-color-secondary);
+  font-size: var(--fs-sm);
 }
 
-/* Card 2 (Experiência gamificada): texto em cima, imagem embaixo */
+/* Imagem do card rosa */
 .feature-image {
-    margin-block-start: var(--py-lg);
-    border-radius: 0.75rem;
-    overflow: hidden;
-    position: relative;
+  position: relative;
+  margin-block-start: var(--py-lg);
+  overflow: hidden;
+  border-radius: 0.75rem;
 }
 
 .feature-image img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* Cards 4 e 5 (Compartilhe / Letras): imagem ao lado do texto */
+/* Cards de baixo */
 .feature-card--wide {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
 .feature-card-content {
-    padding: var(--py-lg) var(--px-lg);
+  padding: var(--py-lg) var(--px-lg);
 }
 
 .feature-media {
-    min-height: 14rem;
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  min-height: 14rem;
+  overflow: hidden;
 }
 
 .feature-media img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
+/* Tela de computador */
 @media (width >= 1280px) {
-    .features-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    .feature-card--sm {
-        grid-column: span 1;
-    }
+  .feature-card--sm {
+    grid-column: span 1;
+  }
 
-    .feature-card--tall {
-        grid-column: span 2;
-    }
+  /* Card rosa central */
+  .feature-card--tall {
+    position: relative;
+    grid-column: span 2;
+    height: 35rem;
+    overflow: hidden;
+  }
 
-    .feature-card--tall {
-        display: flex;
-        flex-direction: column;
-        height: 28rem;
-    }
+  .feature-card--tall .feature-image {
+    position: static;
+    margin: 0;
+  }
 
-    .feature-card--tall .feature-image {
-        flex: 1;
-        min-height: 0;
-    }
+  .feature-card--tall .feature-image img {
+    position: absolute;
+    bottom: -1rem;
+    left: 74%;
+    width: auto;
+    height: 31rem;
+    max-width: none;
+    transform: translateX(-50%);
+    object-fit: contain;
+  }
 
-    .feature-card--tall .feature-image img {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-    }
+  /* Dois cards largos da segunda linha */
+  .feature-card--wide {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    height: 35rem;
+    padding: 0;
+    overflow: hidden;
+  }
 
-    .feature-card--wide {
-        grid-column: span 2;
-        flex-direction: row;
-        align-items: stretch;
-        height: 20rem;
-    }
+  .feature-card--wide .feature-media {
+    position: relative;
+    flex: 0 0 46%;
+    min-height: 0;
+    overflow: hidden;
+  }
 
-    .feature-card--wide .feature-media {
-        flex: 0 0 40%;
-        min-height: 0;
-    }
+  .feature-card--wide .feature-media img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+  }
 
-    .feature-card--wide .feature-media img {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-    }
+  .feature-card--wide .feature-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--py-lg) var(--px-lg);
+  }
+}
 
-    .feature-card--wide .feature-card-content {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
+.feature-card--tall .feature-icon {
+  position: relative;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+}
+
+.feature-card--tall h3,
+.feature-card--tall p {
+  position: relative;
+  z-index: 1;
+  width: 43%;
+}
+
+  .feature-card--tall .feature-image img {
+    left: 77%;
+    bottom: 3rem;
+    height: 40rem;
+  }
 }
